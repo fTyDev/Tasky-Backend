@@ -21,7 +21,6 @@ from todo_app import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    # Custom authentication endpoints
     path("auth/login/", views.login_view, name="login"),
     path("auth/logout/", views.logout_view, name="logout"),
     path("auth/register/", views.register_view, name="register"),
@@ -30,7 +29,6 @@ urlpatterns = [
         "hello/",
         views.hello_world,
     ),
-    # Task endpoints
     path('tasks/', views.TaskListView.as_view(), name='task-list'),
     path('tasks/<int:pk>/', views.TaskDetailView.as_view(), name='task-detail'),
     path('tasks/<int:pk>/status/', views.TaskStatusUpdateView.as_view(), name='task-status-update'),

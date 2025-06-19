@@ -54,7 +54,6 @@ def logout_view(request):
     Custom logout view that returns JSON response
     """
     try:
-        # Delete the token
         request.user.auth_token.delete()
     except:
         pass

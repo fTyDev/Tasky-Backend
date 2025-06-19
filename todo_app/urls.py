@@ -8,8 +8,6 @@ urlpatterns = [
     path('logout/', views.LogoutView.as_view(), name='logout'),
     path('profile/', views.UserProfileView.as_view(), name='profile'),
     path('change-password/', views.ChangePasswordView.as_view(), name='change-password'),
-    
-    # Task endpoints
     path('tasks/', views.TaskListView.as_view(), name='task-list'),
     path('tasks/<int:pk>/', views.TaskDetailView.as_view(), name='task-detail'),
     path('tasks/<int:pk>/status/', views.TaskStatusUpdateView.as_view(), name='task-status-update'),
