@@ -1,6 +1,6 @@
-# Todo Backend
+# Tasky Backend
 
-A Django-based REST API for a todo application.
+A Django-based REST API for a "todo" application.
 
 ## Features
 
